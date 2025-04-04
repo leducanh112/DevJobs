@@ -1,2 +1,2 @@
 # DevJobs
-A place to find job for developers
+A place to find jobs for developers
