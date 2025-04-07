@@ -18,13 +18,14 @@ function SkillList() {
   return (
     <>
       <div className="mb-20">
-        {tags.map((item) => (
-          <Link to={`/search?keyword=${item.value || ""}`} key={item.key}>
-            <Tag color="blue" className="mb-5">
-              {item.value}
-            </Tag>
-          </Link>
-        ))}
+        {tags.length > 0 &&
+          tags.map((item) => (
+            <Link to={`/search?keyword=${item.value || ""}`} key={item.key}>
+              <Tag color="blue" className="mb-5">
+                {item.value}
+              </Tag>
+            </Link>
+          ))}
       </div>
     </>
   );
